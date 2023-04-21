@@ -23,6 +23,8 @@ public class MainVM : ObservableObject
         new VM2(),
         new VM3(),
         new VM4(),
+        new VM5(),
+        new VM6(),
     };
 
     public ObservableObject SelectedItem
@@ -65,6 +67,16 @@ public class VM3 : VMBase
 public class VM4 : VMBase
 {
     public override string Name => "Fast switch 2";
+}
+
+public class VM5 : VMBase
+{
+    public override string Name => "Slow switch (without DataGrid) 1";
+}
+
+public class VM6 : VMBase
+{
+    public override string Name => "Slow switch (without DataGrid) 2";
 }
 
 public class Item
